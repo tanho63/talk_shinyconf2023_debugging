@@ -1,4 +1,4 @@
-# Debugging with Shiny
+# DIY Pest Control: Debugging with Shiny
 
 A talk given at ShinyConf 2023.
 
