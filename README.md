@@ -2,7 +2,7 @@
 
 A talk given at ShinyConf 2023.
 
-Slides: [Google Slides](https://docs.google.com/presentation/d/1yuV8wkcsnclF_mQACuR1Fesd8E4A3RrQpmpOruPbzVA/)
+Slides: [Google Slides](https://docs.google.com/presentation/d/1yuV8wkcsnclF_mQACuR1Fesd8E4A3RrQpmpOruPbzVA/), PDF
 
 Video: TBD
 
