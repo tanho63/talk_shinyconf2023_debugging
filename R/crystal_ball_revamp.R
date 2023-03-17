@@ -18,7 +18,7 @@ server <- function(input, output, session) {
   rv <- reactiveValues()
   
   observeEvent(input$run,{
-    rv$auth <- api_login(input$username,  input$password, input$league_id)
+    rv$auth <- api_login(input$username, input$password, input$league_id)
     rv$standings <- download_standings(rv$auth)
     rv$schedule <- download_schedule(rv$auth)
     rv$projections <- calculate_projected_wins(rv$standings,  rv$schedule)
