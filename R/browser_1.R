@@ -3,18 +3,25 @@ library(DT)
 library(tidyverse)
 
 ui <- fluidPage(
-  DTOutput("my_table")
+  selectInput("car", 
+              "Select car",
+              choices = rownames(mtcars)
+  ),
+  DTOutput("my_car")
 )
 
 server <- function(input, output, session) {
-  output$my_table <- renderDT({
+  
+  output$my_car <- renderDT({
+    
     df_mtcars <- mtcars |> 
-      rownames_to_column("car")
+      rownames_to_column("car") |> 
+      filter(car %in% input$car)
     
     browser()
     
     df_mtcars |> 
-      select(car, mpg, cyl) |> 
+      select(car, hp, mpg, cyl) |> 
       datatable()
   })
 }
